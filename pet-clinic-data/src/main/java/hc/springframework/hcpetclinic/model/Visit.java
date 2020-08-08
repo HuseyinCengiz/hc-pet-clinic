@@ -17,11 +17,11 @@ public class Visit extends BaseEntity {
     @JoinColumn(name = "pet_id")
     private Pet pet;
 
-    public LocalDate getData() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setData(LocalDate date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
