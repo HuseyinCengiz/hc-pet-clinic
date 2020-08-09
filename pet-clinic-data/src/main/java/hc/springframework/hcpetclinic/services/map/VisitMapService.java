@@ -3,11 +3,13 @@ package hc.springframework.hcpetclinic.services.map;
 
 import hc.springframework.hcpetclinic.model.Visit;
 import hc.springframework.hcpetclinic.services.VisitService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
     @Override
